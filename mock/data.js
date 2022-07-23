@@ -1,0 +1,13 @@
+export const DATA = [
+    { id: 1, name: "Arroz con Pollo", "description": "Tradicional plato de bandera acompañado de la entrada de su elección.", price: 12.50, image: "https://www.lima2019.pe/sites/default/files/inline-images/preview-gallery-004_0.jpg" },
+    { id: 2, name: "Lomo Saltado", "description": "Tradicional plato de bandera acompañado de la entrada de su elección.", price: 13.50, image: "https://www.lima2019.pe/sites/default/files/inline-images/preview-gallery-004_0.jpg" },
+    { id: 3, name: "Ají de Gallina", "description": "Tradicional plato de bandera acompañado de la entrada de su elección.", price: 12.00, image: "https://www.lima2019.pe/sites/default/files/inline-images/preview-gallery-004_0.jpg" },
+    { id: 4, name: "Tallarín Saltado", "description": "Tradicional plato de bandera acompañado de la entrada de su elección.", price: 12.00, image: "https://www.lima2019.pe/sites/default/files/inline-images/preview-gallery-004_0.jpg" },
+    { id: 5, name: "Carapulcra", "description": "Tradicional plato de bandera acompañado de la entrada de su elección.", price: 12.00, image: "https://www.lima2019.pe/sites/default/files/inline-images/preview-gallery-004_0.jpg" },
+    { id: 6, name: "Caldo de Gallina", "description": "Tradicional plato de bandera acompañado de la entrada de su elección.", price: 12.00, image: "https://www.lima2019.pe/sites/default/files/inline-images/preview-gallery-004_0.jpg" },
+    { id: 7, name: "Caigua Rellena", "description": "Tradicional plato de bandera acompañado de la entrada de su elección.", price: 12.00, image: "https://www.lima2019.pe/sites/default/files/inline-images/preview-gallery-004_0.jpg" },
+    { id: 8, name: "Tallarines Verdes", "description": "Tradicional plato de bandera acompañado de la entrada de su elección.", price: 12.00, image: "https://www.lima2019.pe/sites/default/files/inline-images/preview-gallery-004_0.jpg" },
+    { id: 9, name: "Sopa Seca", "description": "Tradicional plato de bandera acompañado de la entrada de su elección.", price: 12.00, image: "https://www.lima2019.pe/sites/default/files/inline-images/preview-gallery-004_0.jpg" },
+    { id: 10, name: "Cau Cau", "description": "Tradicional plato de bandera acompañado de la entrada de su elección.", price: 12.00, image: "https://www.lima2019.pe/sites/default/files/inline-images/preview-gallery-004_0.jpg" },
+    { id: 11, name: "Chanfainita", "description": "Tradicional plato de bandera acompañado de la entrada de su elección.", price: 12.00, image: "https://www.lima2019.pe/sites/default/files/inline-images/preview-gallery-004_0.jpg" }
+]
