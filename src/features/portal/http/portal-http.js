@@ -6,8 +6,8 @@ const getDishes = () => {
   return Http.get(endpoint)
 }
 
-const OrderHttp = {
+const PortalHttp = {
     getDishes
 }
 
-export default OrderHttp;
+export default PortalHttp;

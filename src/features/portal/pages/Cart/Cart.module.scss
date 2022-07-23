@@ -1,0 +1,56 @@
+.Cart {
+    display: flex;
+    column-gap: 10%;
+
+    .List {
+        width: 60%;
+        .Item {
+            display: flex;
+            padding: 20px;
+            padding-left: 0;
+            img {
+                width: 20%;
+                height: 25%;
+            }
+            .Data {
+                padding-left: 20px;
+                .DataInfo {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 20px;
+                    
+                }
+                .DataAction {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 20px;
+                    margin-top: 12px;
+
+                    .InputAction {
+                        input {
+                            width: 50px;
+                            padding: 2px;
+                            font-size: 1.05rem;
+                            text-align: center;
+                        }
+                        .ButtonQuantity {
+                            padding: 2px;
+                            width: 36px;
+                            font-size: 1.05rem;
+                        }
+                    }
+                    .SubTotal {
+                        width: 200px;
+                        margin-left: 40px;
+
+                        .SubTotalPrice {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

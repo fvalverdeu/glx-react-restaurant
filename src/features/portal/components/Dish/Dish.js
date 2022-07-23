@@ -1,22 +1,31 @@
 import styles from './Dish.module.scss';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import PortalActions from '../../../../core/store/portal/actions';
+import usePortal from '../../../../core/store/portal/usePortal';
 
 const Dish = ({
   dish,
   status,
   // isAdded,
-  addItem
+  // addItem
 }) => {
   // const [items, setItems] = useState([]);
   const [isAdded, setIsAdded] = useState(false);
   const { image, name, description, price } = dish;
+  const { cart } = usePortal()
   const add = () => {
     // const newItem = {...dish}
     // setItems(() => [...items, newItem]);
     // isAdded = true;
     setIsAdded(true);
     addItem(dish);
+  }
+
+  const dispatch = useDispatch();
+  const addItem = () => {
+    dispatch(PortalActions.cartAdd(dish))
   }
 
   return (
@@ -30,6 +39,9 @@ const Dish = ({
           isAdded ? <span className={styles.status}>Agregado al carrito</span> : <button onClick={add}>Agregar</button>
         }
       </div>
+      {/* <pre style={{ fontSize: 10 }}>
+          {JSON.stringify(cart, null, 4)}
+        </pre> */}
     </div>
   );
 };

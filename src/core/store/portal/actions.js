@@ -1,4 +1,7 @@
+import PortalHttp from "../../../features/portal/http/portal-http";
+
 export const PORTAL_ACTIONS = {
+  START_LOADING: "[PORTAL] START_LOADING",
   GET_ALL_PRODUCT: "[PORTAL] GET_ALL_PRODUCT",
   CART_GET_TOTAL_QUANTITY: "[PORTAL] CART_GET_TOTAL_QUANTITY",
   CART_ADD: "[PORTAL] CART_ADD" ,
@@ -7,6 +10,8 @@ export const PORTAL_ACTIONS = {
   CART_INCREASE_QUANTITY: "[PORTAL] CART_INCREASE_QUANTITY 1",
   CART_DECREASE_QUANTITY: "[PORTAL] CART_DECREASE_QUANTITY 1",
 };
+
+const startLoading = () => ({ type: PORTAL_ACTIONS.START_LOADING }) 
 
 const getAllProduct = (payload) => ({
   type: PORTAL_ACTIONS.GET_ALL_PRODUCT,
@@ -37,13 +42,27 @@ const cartDecreaseQuantity = (payload) => ({
   payload,
 });
 
+const loadProducts = () => {
+  return (dispatch, getState) => {
+
+    dispatch(startLoading())
+    
+    PortalHttp.getDishes()
+      .then(res => {
+        dispatch(getAllProduct(res))
+      })
+  }
+}
+
 const PortalActions = {
+  startLoading,
   getAllProduct,
   cartAdd,
   cartUpdateQuantity,
   cartRemove,
   cartIncreaseQuantity,
-  cartDecreaseQuantity
+  cartDecreaseQuantity,
+  loadProducts
 };
 
 
