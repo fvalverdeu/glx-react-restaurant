@@ -1,0 +1,34 @@
+$toolbarHeight: 64px;
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+
+  header, footer {
+    height: $toolbarHeight;
+    display: flex;
+    align-items: center;
+    padding-inline: 1rem;
+    background: lightgrey;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  main {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    min-height: calc(100vh - #{$toolbarHeight * 2});
+  }
+
+  nav {
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
